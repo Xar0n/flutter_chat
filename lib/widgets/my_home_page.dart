@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:message_app/models/message_model.dart';
 import 'package:message_app/widgets/message_chat.dart';
 
-import 'animal_card.dart';
-import '../models/animal_model.dart';
 import 'chat_input_line.dart';
 import 'dart:math';
 
@@ -23,7 +21,6 @@ extension RandomListItem<T> on List<T> {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Animal> animals = [];
   List<Message> messages = [];
   static const List<String> answers = [
     'Доброе утро!',
@@ -39,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void initState() {
-    animals.addAll([Animal(), Animal()]);
     super.initState();
   }
 
